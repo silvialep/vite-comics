@@ -12,7 +12,6 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone. -->
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 import AppMain from "./components/AppMain.vue";
-import NavBar from "./components/NavBar.vue";
 
 
 export default {
@@ -26,7 +25,6 @@ export default {
     AppHeader,
     AppFooter,
     AppMain,
-    NavBar,
   },
 
 
@@ -51,6 +49,10 @@ export default {
     <AppFooter>
 
     </AppFooter>
+
+    <FooterNavBar>
+
+    </FooterNavBar>
 
 
   </div>

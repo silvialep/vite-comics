@@ -26,11 +26,11 @@ export default {
 
 
 #container {
-    height: 100px;
+    height: 250px;
     padding: 30px;
 
     h2 {
-    text-align: center;
+        text-align: center;
     }
 }
 

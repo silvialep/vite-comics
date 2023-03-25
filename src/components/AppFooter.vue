@@ -1,5 +1,7 @@
 <script>
 
+import FooterNavBar from "../components/FooterNavBar.vue";
+
 
 export default {
     data() {
@@ -48,6 +50,7 @@ export default {
     },
     
     components: {
+        FooterNavBar,
     },
 }
 
@@ -83,6 +86,10 @@ export default {
         </div>
         
     </div>
+
+    <FooterNavBar>
+
+    </FooterNavBar>
     
 </template>
 

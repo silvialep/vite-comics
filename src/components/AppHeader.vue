@@ -15,12 +15,20 @@ export default {
                 'Fans',
                 'News',
                 'shop',
-            ]
+            ],
+
+            activeIndex: null,
 
         }
     },
 
     components: {
+    },
+
+    methods: {
+        activeLink(index) {
+            this.activeIndex = index;
+        }
     },
 }
 
@@ -40,7 +48,7 @@ export default {
             </div>
             <div id="right-nav">
                 <ul>
-                    <li v-for="link in headerLinks"> {{ link.toUpperCase() }} </li>
+                    <li v-for="link, index in headerLinks" @click="activeLink(index)" :class="activeIndex == index ? 'active' : ''"> {{ link.toUpperCase() }} </li>
                 </ul>
             </div>
 
@@ -69,6 +77,9 @@ export default {
 
  #nav-container {
     @include mainContainer();
+    
+    padding: 0;
+
 
     background-color: white;
 
@@ -76,6 +87,7 @@ export default {
         height: 100%;
 
         img {
+            padding: 5px;
             height: 100%;
         }
     }
@@ -86,14 +98,58 @@ export default {
         ul {
             display: flex;
             flex-flow: row nowrap;
-            gap: 10px;
+            gap: 20px;
             align-items: center;
             height: 100%;
             color: rgb(82, 70, 70);
             list-style-type: none;
+
+            li {
+                position: relative;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                // border-bottom: 5px solid white;
+                // border-top: 5px solid white;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &:hover:before{
+                    content: '';
+
+                    position: absolute;
+                    bottom: 0;
+
+                    width: 100%;
+                    height: 5px;
+                    background-color: rgb(2, 130, 249);
+
+                }
+
+            }
+            .active {
+                color: rgb(2, 130, 249);
+
+                &::before {
+                    content: '';
+
+                    position: absolute;
+                    bottom: 0;
+
+                    width: 100%;
+                    height: 5px;
+                    background-color: rgb(2, 130, 249);
+                }
+
+                
+                }
+            }
         }
     }
-}
+
+
     
 
 
