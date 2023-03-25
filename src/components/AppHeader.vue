@@ -48,7 +48,7 @@ export default {
             </div>
             <div id="right-nav">
                 <ul>
-                    <li v-for="link, index in headerLinks" @click="activeLink(index)" :class="activeIndex == index ? 'active' : ''"> {{ link.toUpperCase() }} </li>
+                    <li v-for="(link, index) in headerLinks" @click="activeLink(index)" :class="activeIndex == index ? 'active' : ''"> {{ link.toUpperCase() }} </li>
                 </ul>
             </div>
 

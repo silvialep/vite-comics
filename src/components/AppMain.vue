@@ -26,7 +26,7 @@ export default {
 
 
 #container {
-    height: 250px;
+    height: 100px;
     padding: 30px;
 
     h2 {
