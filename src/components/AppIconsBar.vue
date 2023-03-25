@@ -5,23 +5,23 @@ export default {
         return {
             icons: [
                 {
-                    image: '../../public/buy-comics-digital-comics.png',
+                    image: '/buy-comics-digital-comics.png',
                     name: 'digital comics',
                 },
                 {
-                    image: '../../public/buy-comics-merchandise.png',
+                    image: '/buy-comics-merchandise.png',
                     name: 'dc merchandise',
                 },
                 {
-                    image: '../../public/buy-comics-subscriptions.png',
+                    image: '/buy-comics-subscriptions.png',
                     name: 'subscription',
                 },
                 {
-                    image: '../../public/buy-comics-shop-locator.png',
+                    image: '/buy-comics-shop-locator.png',
                     name: 'comic shop locator',
                 },
                 {
-                    image: '../../public/buy-dc-power-visa.svg',
+                    image: '/buy-dc-power-visa.svg',
                     name: 'dc power visa',
                 },
             ]

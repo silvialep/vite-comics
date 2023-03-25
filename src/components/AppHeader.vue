@@ -44,7 +44,7 @@ export default {
     <nav id="container">
         <div id="nav-container">
             <div id="left-nav">
-                <img src="../../dc-logo.png" alt="main logo">
+                <img src="/dc-logo.png" alt="main logo">
             </div>
             <div id="right-nav">
                 <ul>

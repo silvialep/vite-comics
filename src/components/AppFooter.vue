@@ -80,7 +80,7 @@ export default {
             </div>
 
             <div id="footer-logo">
-                <img src="../../public/dc-logo-bg.png" alt="logo footer">
+                <img src="/dc-logo-bg.png" alt="logo footer">
             </div>
             
         </div>
@@ -101,7 +101,7 @@ export default {
 #footer-wallpaper {
     width: 100%;
     height: 350px;
-    background-image: url(../../public/footer-bg.jpg);
+    background-image: url(/footer-bg.jpg);
     background-size: cover;
 }
 
