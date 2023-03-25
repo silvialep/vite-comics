@@ -101,6 +101,7 @@ export default {
             gap: 20px;
             align-items: center;
             height: 100%;
+            font-weight: bold;
             color: rgb(82, 70, 70);
             list-style-type: none;
 
