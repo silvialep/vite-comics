@@ -1,0 +1,8 @@
+@mixin mainContainer() {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+}

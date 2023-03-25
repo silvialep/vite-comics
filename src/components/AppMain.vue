@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-
+            message: '--> Content goes here <--'
         }
     },
 }
@@ -11,8 +11,10 @@ export default {
 
 <template>
     <div id="container">
+        <h2>
+            {{ message }}
 
-
+        </h2>
 
     </div>
 </template>
@@ -20,8 +22,16 @@ export default {
 
 <style lang="scss" scoped>
 
+@use "../scss/variables" as *;
+
+
 #container {
-    height: 200px;
+    height: 100px;
+    padding: 30px;
+
+    h2 {
+    text-align: center;
+    }
 }
 
 </style>
