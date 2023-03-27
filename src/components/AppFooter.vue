@@ -76,7 +76,7 @@ export default {
             <div id="footer-lists">
                 <ul v-for="group in comicsLinks">
                     <li :class="'link-title'"> {{ group.title.toUpperCase() }} </li>
-                    <li v-for="link in group.links"> {{ link }} </li>
+                    <li v-for="link in group.links"> <a href="#"> {{ link }} </a></li>
                 </ul>
                 
             </div>
@@ -114,7 +114,6 @@ export default {
     ul {
         // font-size: 0.6rem;
         list-style-type: none;
-        color: rgb(149, 149, 149);
         
 
         .link-title {
@@ -122,6 +121,11 @@ export default {
             font-weight: bold;
             font-size: 1rem;
             color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(149, 149, 149);
         }
     }
 

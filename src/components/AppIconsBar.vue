@@ -80,12 +80,18 @@ export default {
             }
             
             &:last-child img {
-                height: 2.6em;
+                height: 2.5em;
             }
 
             span {
                 padding: 0 10px;
+
+                &:hover {
+                    cursor: pointer;
+                    text-shadow: 2px 2px 5px rgb(231, 233, 235);
+                }
             }
+
         }
     
     }
