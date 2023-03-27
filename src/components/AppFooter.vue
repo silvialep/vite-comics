@@ -123,6 +123,10 @@ export default {
         a {
             text-decoration: none;
             color: rgb(149, 149, 149);
+
+            &:hover {
+                color: rgb(231, 233, 235);
+            }
         }
     }
 
