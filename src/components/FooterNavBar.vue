@@ -25,7 +25,7 @@ export default {
 
             <div id="footer-icons">
                 <h3>FOLLOW US</h3>
-                <img v-for="icon in socialIcons" :src="icon" alt="social icon">
+                <a href="#" v-for="icon in socialIcons"><img :src="icon" alt="social icon"></a>
 
             </div>
 
@@ -79,6 +79,7 @@ export default {
             height: 40%;
             object-fit: contain;
         }
+
     }
 }
  
