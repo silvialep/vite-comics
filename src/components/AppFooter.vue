@@ -6,44 +6,57 @@ import FooterNavBar from "../components/FooterNavBar.vue";
 export default {
     data() {
         return {
-            dcComics: [
-                'Characters',
-                'Comics',
-                'Movies',
-                'TV',
-                'Games',
-                'Collectibles',
-                'Videos',
-                'Fans',
-                'News',
-                'shop', 
-            ],
+            comicsLinks: [
+                {
+                    title: 'Dc Comics' ,
+                    links: [
+                        'Characters',
+                        'Comics',
+                        'Movies',
+                        'TV',
+                        'Games',
+                        'Collectibles',
+                        'Videos',
+                        'Fans',
+                        'News',
+                        'shop', 
+                    ]
+                },
+                {
+                    title: 'Shop',
+                    links: [
+                        'Shop DC',
+                        'Shop DC Collectibles'
+                    ]
+                },
+                {
+                    title: 'DC',
+                    links: [
+                        'Terms Of Use',
+                        'Privacy Policy (New)',
+                        'Ad Choices',
+                        'Advertising',
+                        'Jobs',
+                        'Subscriptions',
+                        'Talent Workshops',
+                        'CPSC Certificates',
+                        'Ratings',
+                        'Shop Help',
+                        'Contact Us'
+                    ]
+                },
+                {
+                    title: 'Sites',
+                    links: [
+                        'DC',
+                        'MAD Magazine',
+                        'DC Kids',
+                        'DC Universe',
+                        'DC Power Visa'
+                    ]
+                }
+                
 
-            shop: [
-                'Shop DC',
-                'Shop DC Collectibles'
-            ],
-
-            dcLinks: [
-                'Terms Of Use',
-                'Privacy Policy (New)',
-                'Ad Choices',
-                'Advertising',
-                'Jobs',
-                'Subscriptions',
-                'Talent Workshops',
-                'CPSC Certificates',
-                'Ratings',
-                'Shop Help',
-                'Contact Us'
-            ],
-
-            sites: [
-                'DC',
-                'MAD Magazine',
-                'DC Kids',
-                'DC Universe',
-                'DC Power Visa'
             ]
             
         }
@@ -61,26 +74,15 @@ export default {
     <div id="footer-wallpaper">
         <div id="footer-container">
             <div id="footer-lists">
-                <ul>
-                    <li><h3> DC COMICS </h3></li>
-                    <li v-for="item in dcComics"> {{ item }} </li>
+                <ul v-for="group in comicsLinks">
+                    <li :class="'link-title'"> {{ group.title.toUpperCase() }} </li>
+                    <li v-for="link in group.links"> {{ link }} </li>
                 </ul>
-                <ul>
-                    <li><h3> SHOP </h3></li>
-                    <li v-for="item in shop"> {{ item }} </li>
-                </ul>
-                <ul>
-                    <li><h3> DC COMICS </h3></li>
-                    <li v-for="item in dcLinks"> {{ item }} </li>
-                </ul>
-                <ul>
-                    <li><h3> DC COMICS </h3></li>
-                    <li v-for="item in sites"> {{ item }} </li>
-                </ul>
+                
             </div>
 
             <div id="footer-logo">
-                <img src="/dc-logo-bg.png" alt="logo footer">
+                <img src="/img/dc-logo-bg.png" alt="logo footer">
             </div>
             
         </div>
@@ -101,7 +103,7 @@ export default {
 #footer-wallpaper {
     width: 100%;
     height: 350px;
-    background-image: url(/footer-bg.jpg);
+    background-image: url(/img/footer-bg.jpg);
     background-size: cover;
 }
 
@@ -113,10 +115,12 @@ export default {
         // font-size: 0.6rem;
         list-style-type: none;
         color: rgb(149, 149, 149);
-        padding: 20px 0 0;
         
 
-        h3 {
+        .link-title {
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 1rem;
             color: white;
         }
     }
@@ -138,7 +142,7 @@ export default {
 #footer-lists {
     display: flex;
     flex-flow: column wrap;
-    gap: 15px;
+    gap: 10px;
 }
 
 

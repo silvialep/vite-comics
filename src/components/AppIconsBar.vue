@@ -5,23 +5,23 @@ export default {
         return {
             icons: [
                 {
-                    image: '/buy-comics-digital-comics.png',
+                    image: '/img/buy-comics-digital-comics.png',
                     name: 'digital comics',
                 },
                 {
-                    image: '/buy-comics-merchandise.png',
+                    image: '/img/buy-comics-merchandise.png',
                     name: 'dc merchandise',
                 },
                 {
-                    image: '/buy-comics-subscriptions.png',
+                    image: '/img/buy-comics-subscriptions.png',
                     name: 'subscription',
                 },
                 {
-                    image: '/buy-comics-shop-locator.png',
+                    image: '/img/buy-comics-shop-locator.png',
                     name: 'comic shop locator',
                 },
                 {
-                    image: '/buy-dc-power-visa.svg',
+                    image: '/img/buy-dc-power-visa.svg',
                     name: 'dc power visa',
                 },
             ]
@@ -76,7 +76,11 @@ export default {
             height: 100%;
 
             img {
-                height: 30%;
+                height: 3em;
+            }
+            
+            &:last-child img {
+                height: 2.6em;
             }
 
             span {

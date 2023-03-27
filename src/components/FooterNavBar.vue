@@ -3,11 +3,11 @@ export default {
     data() {
         return {
             socialIcons: [
-                '../../public/footer-facebook.png',
-                '../../public/footer-twitter.png',
-                '../../public/footer-youtube.png',
-                '../../public/footer-pinterest.png',
-                '../../public/footer-periscope.png',
+                '/img/footer-facebook.png',
+                '/img/footer-twitter.png',
+                '/img/footer-youtube.png',
+                '/img/footer-pinterest.png',
+                '/img/footer-periscope.png',
             ]
 
         }
