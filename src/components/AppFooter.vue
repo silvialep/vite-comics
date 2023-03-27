@@ -15,11 +15,8 @@ export default {
                         'Movies',
                         'TV',
                         'Games',
-                        'Collectibles',
                         'Videos',
-                        'Fans',
                         'News',
-                        'shop', 
                     ]
                 },
                 {
@@ -141,13 +138,16 @@ export default {
             overflow: hidden;
         }
     }
+
+
+    #footer-lists {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 20px;
+        padding-top: 20px;
+    }
 }
 
-#footer-lists {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px;
-}
 
 
 

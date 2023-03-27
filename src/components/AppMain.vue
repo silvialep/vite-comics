@@ -97,7 +97,7 @@ export default {
         <div id="comics-tag">
             <h3>Current Series</h3>
         </div>
-        <AppCard v-for="(card, index) in cards" :img="card.thumb" :title="card.series"></AppCard>
+        <AppCard v-for="card in cards" :img="card.thumb" :title="card.series"></AppCard>
 
         <div id="button-container">
             <button>LOAD MORE</button>
